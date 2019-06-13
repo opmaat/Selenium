@@ -43,9 +43,6 @@ namespace Tailormade.Selenium.Controller
             //System.Threading.Thread.Sleep(sleep==0?DefaultSleep:sleep);
             return true;
         }
-
-        
-
         public bool RecycleDriver(int recycleNavigateCount = 100)
         {
             if (this.Driver != null && this.NavigateCount < recycleNavigateCount)
@@ -67,5 +64,6 @@ namespace Tailormade.Selenium.Controller
             Driver.Quit();
             Driver.Dispose();
         }
+
     }
 }
